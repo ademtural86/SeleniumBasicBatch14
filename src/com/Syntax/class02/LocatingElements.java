@@ -3,6 +3,7 @@ package com.Syntax.class02;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LocatingElements {
     public static void main(String[] args) {
@@ -13,10 +14,10 @@ public class LocatingElements {
 //        set the path to the driver to link it with our class    on mac u dont need .exe on windows u need .exe
         System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
 // create a WebDriver instance
-
-        WebDriver driver= new ChromeDriver();
-
-//        goto fb.com
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("user-data-dir=C:/Users/user/AppData/Local/Google/Chrome/User Data/Default");
+        WebDriver driver= new ChromeDriver(options);
+        //        goto fb.com
         driver.get("https://www.facebook.com/");
 //        maximize the window
         driver.manage().window().maximize();
@@ -27,7 +28,7 @@ public class LocatingElements {
         driver.findElement(By.name("pass")).sendKeys("waow12345678");
 //        click the login
         driver.findElement(By.name("login")).click();
-
+        driver.quit();
 //        for the following task to work please make sure that you comment the Login functionality
 
 //        task2:
