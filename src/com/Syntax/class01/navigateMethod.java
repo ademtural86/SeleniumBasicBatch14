@@ -10,7 +10,7 @@ public class navigateMethod {
 //        go back to google.com
 //
         System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
-//        create the Webdriver instance
+//        create the Webdriver instanceSelenium
         WebDriver driver=new ChromeDriver();
 //        goto google.com
         driver.get("https://www.google.com");
@@ -18,7 +18,7 @@ public class navigateMethod {
         driver.navigate().to("https://www.facebook.com/");
 
 //        introduce some sleep which is wait
-//        wait or pause for 2000 milli seconds (2 sec)
+//         or pause for 2000 milliseconds (2 sec)
         Thread.sleep(2000);
 //        go back to google .com
         driver.navigate().back();
