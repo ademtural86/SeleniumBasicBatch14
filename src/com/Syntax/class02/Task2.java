@@ -19,7 +19,7 @@ public class Task2 {
         Thread.sleep(2000);
         driver.findElement(By.name("firstname")).sendKeys("testerName");
         driver.findElement(By.name("lastname")).sendKeys("testerSurName");
-        driver.findElement(By.className("_8ien")).click();
-        driver.quit();
+        driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/img")).click();
+        //driver.quit();
     }
 }
