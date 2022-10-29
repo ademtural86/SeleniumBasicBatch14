@@ -19,7 +19,9 @@ public class Task2 {
         Thread.sleep(2000);
         driver.findElement(By.name("firstname")).sendKeys("testerName");
         driver.findElement(By.name("lastname")).sendKeys("testerSurName");
-        driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/img")).click();
+        //driver.findElement(By.xpath("/html/body/div[3]/div[2]/div/div/img")).click();
+        driver.findElement(By.xpath("//img[@src='https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png']")).click();
+
         //driver.quit();
     }
 }
