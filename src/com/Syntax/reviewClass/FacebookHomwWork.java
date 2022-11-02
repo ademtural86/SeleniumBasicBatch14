@@ -31,8 +31,5 @@ public class FacebookHomwWork {
         Thread.sleep(5000);
 //     quit the browser
         driver.quit();
-
-
-
     }
 }

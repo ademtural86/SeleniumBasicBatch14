@@ -15,7 +15,7 @@ public class CssSelector {
         driver.get("https://syntaxprojects.com/basic-first-form-demo.php");
 
 //        get the webElment text box
-//        driver.findElement(By.cssSelector("input[placeholder *= 'Please enter']")).sendKeys("Abracadbara");
+        driver.findElement(By.cssSelector("input[placeholder *= 'Please enter']")).sendKeys("Abracadbara");
 
 //        another method of doing the above operation
         WebElement textBox = driver.findElement(By.cssSelector("input[placeholder *= 'Please enter']"));
