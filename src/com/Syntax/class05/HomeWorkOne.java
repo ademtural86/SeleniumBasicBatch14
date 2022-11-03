@@ -53,5 +53,8 @@ public class HomeWorkOne {
 
         WebElement sex = driver.findElement(By.xpath("//label[text()='Male']"));
         sex.click();
+
+        Thread.sleep(3000);
+        driver.quit();
     }
 }
