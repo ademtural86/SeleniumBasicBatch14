@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
-import java.util.Locale;
 
 public class RadioButtons {
     public static void main(String[] args) {
@@ -29,16 +28,7 @@ public class RadioButtons {
             if(option.equalsIgnoreCase("0 - 15")){
 //                click on the radio Btn
                 radioBtn.click();
-
             }
-
         }
-
-
-
-
-
-
-
     }
 }

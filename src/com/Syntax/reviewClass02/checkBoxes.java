@@ -29,7 +29,6 @@ public class checkBoxes {
                 checkBx.click();
                 break;
             }
-
         }
     }
 }

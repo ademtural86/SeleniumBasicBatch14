@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class HomeWorkOne {
     public static void main(String[] args) throws InterruptedException {
         /*1.Go to facebook
@@ -21,7 +23,8 @@ public class HomeWorkOne {
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
 
-        driver.findElement(By.linkText("Create New Account")).click();
+        WebElement createAccountBtn = driver.findElement(By.linkText("Create New Account"));
+        createAccountBtn.click();
         Thread.sleep(2000);
 
         WebElement firstname = driver.findElement(By.name("firstname"));
@@ -51,8 +54,14 @@ public class HomeWorkOne {
         Select selectYear =new Select(dropDownYear);
         selectYear.selectByValue("1986");
 
-        WebElement sex = driver.findElement(By.xpath("//label[text()='Male']"));
-        sex.click();
+        List<WebElement> sex = driver.findElements(By.xpath("//input[@name='sex']"));
+        for (WebElement sexOne:sex) {
+            String sexChoice = sexOne.getAttribute("Value");
+            if(sexChoice.equalsIgnoreCase("2")){
+                sexOne.click();
+                break;
+            }
+        }
 
         Thread.sleep(3000);
         driver.quit();

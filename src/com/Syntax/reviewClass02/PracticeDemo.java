@@ -16,7 +16,7 @@ public class PracticeDemo {
 
 //       When user sends in the username Admin
         WebElement userName = driver.findElement(By.id("txtUsername"));
-//        send the user name
+//        send the username
         userName.sendKeys("Admin");
 
 //        Then user sends in the wrong password
@@ -42,9 +42,5 @@ public class PracticeDemo {
 
             System.out.println("the correct Error message is not there ");
         }
-
-
-
-
     }
 }
