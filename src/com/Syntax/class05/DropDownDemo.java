@@ -22,7 +22,7 @@ public class DropDownDemo {
 
 //        find the WebElement dropDwon by looking for select tag
         WebElement dropDown = driver.findElement(By.xpath("//select[@id='select-demo']"));
-
+String test = driver.getTitle();
 //        use Select class
         Select select =new Select(dropDown);
 

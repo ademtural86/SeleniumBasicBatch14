@@ -56,6 +56,6 @@ public class HomeWork1 {
         usernameInput.sendKeys("ademtural86");
 
         Thread.sleep(300);
-        driver.quit();
+        //driver.quit();
     }
 }
