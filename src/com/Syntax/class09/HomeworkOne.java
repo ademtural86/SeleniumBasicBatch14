@@ -58,6 +58,7 @@ public class HomeworkOne {
                 int rowNbr=i+1;
                 WebElement check = driver.findElement(By.xpath("//table[@id='resultTable']/tbody/tr[" + rowNbr + "]/td[1]"));
                 check.click();
+                break;
             }
         }
         driver.quit();

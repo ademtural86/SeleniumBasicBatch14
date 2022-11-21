@@ -29,7 +29,7 @@ public class HomeworkOne {
         //  go to the website
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
 
-        WebElement checkBox = driver.findElement(By.xpath("//div[@id='checkbox']/input"));
+        WebElement checkBox = driver.findElement(By.xpath("//input[@type='checkbox']"));
         checkBox.click();
 
         WebElement removeBtn = driver.findElement(By.xpath("//button[text()='Remove']"));
